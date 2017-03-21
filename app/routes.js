@@ -24,8 +24,8 @@ export default function createRoutes() {
       },
     },
     {
-     path: '/about',
-     name: 'about',
+     path: '/About',
+     name: 'About',
      getComponent(nextState, cb) {
        import('containers/About')
          .then(loadModule(cb))
