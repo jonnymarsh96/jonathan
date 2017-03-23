@@ -1,6 +1,6 @@
 /*
  *
- * About
+ * Wuzgudhome
  *
  */
 
@@ -14,7 +14,8 @@ import FlatButton from 'material-ui/FlatButton';
 import Helmet from 'react-helmet';
 import {Link} from 'react-router';
 import Responsive from 'react-responsive';
-export default class About extends React.PureComponent {
+export default class Wuzgudhome extends React.PureComponent {
+
   constructor(props) {
     super(props);
     this.state={
@@ -90,6 +91,9 @@ export default class About extends React.PureComponent {
     }
 
   }
+
+
+
 
   render() {
     const navBar={
@@ -209,7 +213,7 @@ export default class About extends React.PureComponent {
 
     return (
       <div style={abStyle1}>
-        <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
+        <Helmet title="Wuzgudhome" meta={[ { name: 'description', content: 'Description of Wuzgudhome' }]}/>
         <header>
         <div style={topBar}></div>
         <div style={bottomLayer}>
@@ -241,6 +245,7 @@ export default class About extends React.PureComponent {
         </footer>
 
       </div>
+
     );
   }
 }

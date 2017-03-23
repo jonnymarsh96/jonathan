@@ -24,6 +24,15 @@ export default function createRoutes() {
       },
     },
     {
+     path: '/Wuzgudhome',
+     name: 'Wuzgudhome',
+     getComponent(nextState, cb) {
+       import('containers/Wuzgudhome')
+         .then(loadModule(cb))
+         .catch(errorLoading);
+     },
+   },
+    {
      path: '/about',
      name: 'about',
      getComponent(nextState, cb) {
