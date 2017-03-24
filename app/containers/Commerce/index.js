@@ -1,6 +1,6 @@
 /*
  *
- * About
+ * Commerce
  *
  */
 
@@ -14,7 +14,10 @@ import FlatButton from 'material-ui/FlatButton';
 import Helmet from 'react-helmet';
 import {Link} from 'react-router';
 import Responsive from 'react-responsive';
-export default class About extends React.PureComponent {
+
+
+export default class Commerce extends React.PureComponent {
+
   constructor(props) {
     super(props);
     this.state={
@@ -39,14 +42,14 @@ export default class About extends React.PureComponent {
     }
     const wuzGud={
       fontSize:"150px",
-      fontFamily:"Amiko",
+      fontFamily:"arial",
       fontWeight:"bold",
 
       textAlign:"center",
     }
     const menu={
       background:"#ffffff",
-      width:"750px",
+      width:"550px",
       height:"70px",
       outlineStyle:"double",
       outlineColor:"#eab126",
@@ -92,6 +95,10 @@ export default class About extends React.PureComponent {
 
   }
 
+
+
+
+
   render() {
     const navBar={
       textAlign:"center"
@@ -102,29 +109,13 @@ export default class About extends React.PureComponent {
       textAlign: "center",
       display: "block",
       margin:"auto",
-      marginTop:"300px",
-      marginBottom:"200px",
-      color:"#4717f6",
-      fontFamily:"Bungee Hairline",
-      fontSize:"30px",
-      fontWeight:"bold",
-      textShadow:"1px 1px 2px #0e0b16 ",
-      background:"rgba(231, 223, 221,.925)",
-      borderRadius:"20px",
+      marginTop:"45px",
+      marginBottom:"300px",
+      background:"rgba(231, 223, 221,0.925)",
+      border:"#e7dfdd",
+      borderRadius:"20px"
 
 
-
-    }
-    const cyberTrain={
-      background:"rgba(231, 223, 221,.95)",
-      height:"90px",
-      fontFamily:"Bungee Hairline",
-      fontSize:"50px",
-      fontWeight:"bold",
-      textShadow:"1px 1px 2px #0e0b16 ",
-      textAlign:"center",
-      borderBottom:"2px solid rgba(0, 0, 000,.1)",
-      wordSpacing:"20px"
 
 
     }
@@ -168,6 +159,68 @@ export default class About extends React.PureComponent {
 
 
     }
+    const augHead={
+      fontFamily:"Shrikhand",
+      fontSize:"60px",
+      textAlign:"center",
+      color:"rgb(46, 132, 68)",
+      marginTop:"150px",
+      textShadow:"1px 3px 2px rgba(234, 177, 38,.7) ",
+      background:"rgba(231, 223, 221,.95)",
+      height:"170px",
+      borderBottom:"5px solid rgba(0, 0, 000,.3)"
+    }
+    const ahClick={
+      fontFamily:"Shrikhand",
+      color:"#3c13d3",
+      fontSize:"30px",
+      marginTop:"30px",
+      wordSpacing:"300px",
+      height:"50px",
+      background:"rgba(231, 223, 221,.95)",
+      borderBottom:"5px solid rgba(0, 0, 000,.3)"
+
+
+    }
+    const read={
+      fontFamily:"Modak",
+      color:"#f24c4e",
+      fontSize:"100px",
+      textShadow:"1px 5px 3px #eab126",
+      background:"rgba(231, 223, 221,.975)",
+      hieght:"100px",
+      borderBottom:"2px solid rgba(0, 0, 000,.1)"
+
+    }
+    const cyberTrain={
+      color:"#4717f6",
+      fontFamily:"Bungee Hairline",
+      fontSize:"30px",
+      fontWeight:"3000",
+      textShadow:"1px 1px 2px #0e0b16 ",
+      borderBottom:"2px solid rgba(0, 0, 000,.1)",
+      wordSpacing:"10px",
+      width:"500px",
+      margin:"auto",
+      marginTop:"30px"
+    }
+    const text={
+      fontFamily:"Amiko",
+      fontSize:"15px",
+      height:"100px",
+      width:"700px",
+      margin:"0 auto",
+      marginTop:"80px"
+    }
+    const article={
+      background:"rgb(231, 223, 221)",
+      height:"500px",
+      width:"700px",
+      margin:"0 auto",
+      marginTop:"20px",
+      border:"2px solid rgba(0, 0, 000,.1)"
+    }
+
     // Space Theme:
     //TitleCard Div red-"#f24c4e" green-"#1b7b34" ocean-"#1fb58f" yellow-"#eab126"
     const boxDiv = {
@@ -212,48 +265,90 @@ export default class About extends React.PureComponent {
     }
 
     const nathanDeal={
-      width:"500px",
-      margin:"0 auto",
-      marginTop:"70px",
-      display:"block",
+      width:"250px",
+      marginTop:"20px",
       border:"5px solid #3c13d3",
-      borderRadius:"10px"
+      borderRadius:"10px",
+
+    }
+    const aizPhoto={
+      display:"block",
+      border:"5px solid #e7dfdd",
+      borderRadius:"10px",
+      width:"400px",
+      margin:"0 auto",
+      marginTop:"50px",
+      display:"flex",
+      flexDirection:"left"
     }
 
+
     return (
-      <div style={abStyle1}>
-        <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
-        <header>
-        <div style={topBar}></div>
-        <div style={bottomLayer}>
-        </div>
+      <div>
+        <Helmet title="Commerce" meta={[ { name: 'description', content: 'Description of Commerce' }]}/>
 
-
-
-        <div style={boxDiv}>WUZ GUD
-
-          {this.showMenu()}
-
-
-        </div>
-          <nav>
-              <Link to="/"><FlatButton label="Home"/></Link>
-              <Link to="/About"><FlatButton label="About"/></Link>
-
-          </nav>
-
-        </header>
-        <main>
-
-
-          <div><Paper style={stylePaper} zDepth={5} > <h2 style={cyberTrain}>THE CYBER TRAIN</h2><img style={nathanDeal} src="http://ocmsites.org/news/wp-content/uploads/sites/15/2017/02/Gov2.png"/></Paper>
-          </div>
-        </main>
-        <footer>
-
-        </footer>
-
+      //Remove this line and you can start writing your code here.
       </div>
     );
   }
+}
+<div style={abStyle1}>
+  <Helmet title="Wuzgudhome" meta={[ { name: 'description', content: 'Description of Wuzgudhome' }]}/>
+  <header>
+  <div style={topBar}></div>
+  <div style={bottomLayer}>
+  </div>
+
+
+
+  <div style={boxDiv}>WUZ GUD
+
+    {this.showMenu()}
+
+
+  </div>
+    <nav>
+        <Link to="/"><FlatButton label="Home"/></Link>
+        <Link to="/About"><FlatButton label="About"/></Link>
+
+    </nav>
+
+  </header>
+  <main>
+
+
+    <div>
+
+      <div style={augHead}>
+        Augusta, Ga
+        <div style={ahClick} >
+          SHOP JAM GRUB RADNESS
+        </div>
+
+      </div>
+      <img style={aizPhoto} src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/15894261_246290605807777_6355833874460611782_n.jpg?oh=025b70f96d9ab031eb72044bafbefe17&oe=59592BAE"/>
+      <Paper style={stylePaper} zDepth={5} >
+        <div style={read}>
+          Read
+        </div>
+        <div style={article}>
+          <img style={nathanDeal} src="http://ocmsites.org/news/wp-content/uploads/sites/15/2017/02/Gov2.png"/>
+          <div><h3 style={cyberTrain}>THE CYBER TRAIN</h3>
+          <p style={text}>
+          Choo Choo! C'mon y'all. Augusta is fastly chuggin' to becoming the cyber capital of the nation! So, hop onboard NOW while the tickets are cheap!
+          --- Click and see WUZ GUD in Cyber-Augusta HERE.
+          </p>
+       </div>
+      </div>
+      </Paper>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+
+</div>
+
+);
+}
 }
